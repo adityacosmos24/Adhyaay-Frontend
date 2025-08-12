@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
+.hero-section {
+  width: 100%;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  padding: 0;
+  border-bottom: 1px solid #eee;
+  min-height: calc(100vh - 64px);
+  margin-top: 64px;
+  display: flex;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row; /* Keep columns side-by-side */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 3rem 2rem;
+  gap: 2.5rem;
+  flex-wrap: wrap; /* Allow wrapping only if too small */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero-left {
+  flex: 1 1 50%; /* Take half width */
+  min-width: 300px;
 }
 
-@keyframes logo-spin {
+.hero-right {
+  flex: 1 1 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Animation for Sanskrit text */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
