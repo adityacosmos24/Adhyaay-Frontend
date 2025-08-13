@@ -11,7 +11,6 @@ const Home = lazy(() => import("./pages/Homepage"));
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Check authentication on first load
   useEffect(() => {
     const checkAuth = async () => {
       try {

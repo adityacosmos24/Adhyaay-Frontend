@@ -130,7 +130,7 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
       </div>
 
       {/* Peeping cat */}
-      <div className="fixed bottom-5 right-5 w-28 h-28 z-[9999] pointer-events-none">
+      <div className="absolute left-5 w-28 h-28 bottom-22 pointer-events-none z-50">
         <Lottie animationData={CatPeeping} loop autoplay />
       </div>
     </div>
