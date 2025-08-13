@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import welcomeAnim from "../assets/Welcome.json";
+import welcomeAnim from "../assets/Welcome2.json";
 import { Particles } from "../components/magicui/particles";
 import { BoxReveal } from "../components/magicui/box-reveal";
 import WrapButton from "./ui/wrap-button";
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative w-full pt-10 md:pt-12 overflow-hidden min-h-screen">
       {/* Background gradient (slightly transparent) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-slate-100/80 to-slate-200/80 z-0" />
+      <div className="absolute inset-0 z-0" />
 
       {/* Particles background */}
       <div className="absolute inset-0 z-10 pointer-events-none">

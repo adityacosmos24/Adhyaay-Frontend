@@ -2,7 +2,7 @@ import HeroSection from '../components/HeroSection';
 import { Testimonial } from '../components/Testimonial';
 import { Events } from '../components/Events';
 import CTA from '../components/cta';
-import { Teams } from '../components/teams';
+import { Teams } from '../components/Teams';
 import Feature from '../components/Features';
 export default function Home() {
   return (

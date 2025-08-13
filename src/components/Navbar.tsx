@@ -52,21 +52,22 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
             <span className="text-xl md:text-2xl font-bold tracking-wide text-gray-900">ADHYAAY</span>
           </div>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden md:flex gap-10 text-gray-800 font-medium justify-center">
-            {navItems.map((item) => (
-              <li key={item.name} className="relative group cursor-pointer">
-                <a
-                  href={item.href}
-                  className="relative inline-block transition-colors duration-300 group-hover:text-blue-600"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                  <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full" />
-                </a>
-              </li>
-            ))}
-          </ul>
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex gap-10 text-gray-800 font-medium justify-center">
+          {navItems.map((item) => (
+            <li key={item.name} className="relative group cursor-pointer">
+              <a
+                href={item.href}
+                className="relative inline-block transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-yellow-500 group-hover:bg-clip-text"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+                <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-gradient-to-r from-orange-500 to-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full" />
+              </a>
+            </li>
+          ))}
+        </ul>
+
 
           {/* Auth Buttons (Desktop) */}
           <div className="hidden md:flex gap-3 justify-end">
@@ -76,10 +77,10 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
               </Button>
             ) : (
               <>
-                <Button asChild variant="outline" className="bg-blue-900 text-white">
+                <Button asChild variant="outline" className="bg-[#fe7500] text-white">
                   <Link to="/login">Sign In</Link>
                 </Button>
-                <Button asChild variant="outline" className="border border-blue-900 text-blue-900">
+                <Button asChild variant="outline" className="border border-[#fe7500] text-[#fe7500]">
                   <Link to="/register">Sign Up</Link>
                 </Button>
               </>
