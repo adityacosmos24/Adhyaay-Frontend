@@ -1,4 +1,5 @@
 import HeroSection from '../components/HeroSection';
+import AboutUs from '../components/AboutUs';
 import { Testimonial } from '../components/Testimonial';
 import { Events } from '../components/Events';
 import CTA from '../components/cta';
@@ -8,7 +9,8 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <Feature/>
+      <AboutUs />
+      {/* <Feature/> */}
       <Events/>
       <Teams/>
       <CTA/>
