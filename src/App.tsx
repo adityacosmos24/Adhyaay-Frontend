@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import { api } from "./lib/axios";
 import Footerdemo from "./components/Footer";
+import Mentors from "./pages/Mentors";
 
 const Home = lazy(() => import("./pages/Homepage"));
 
@@ -40,6 +41,7 @@ export default function App() {
             path="/login"
             element={<Login setIsAuthenticated={setIsAuthenticated} />}
           />
+          <Route path="/mentors" element={<Mentors />}/>
         </Routes>
       </Suspense>
       <Footerdemo/>
