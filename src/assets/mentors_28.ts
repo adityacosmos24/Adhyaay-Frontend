@@ -1,37 +1,14 @@
-const mentors_28 = [
-    { name: "Aastik Das", role: "AI & ML Mentor", image: "/mentors_photo/aastik_das.jpg" },
-    { name: "Prakriti Aryan", role: "UI/UX Designer", image: "/mentors_photo/prakriti_aryan.jpg" },
-    { name: "Jyoti Saxena", role: "Cybersecurity Expert", image: "/mentors_photo/jyoti_saxena.jpg" },
-    { name: "Abhijeet Mishra", role: "Full Stack Developer", image: "/mentors_photo/abhijeet_mishra.jpg" },
-    { name: "Abhinav Shukla", role: "Data Science Mentor", image: "/mentors_photo/abhinav_shukla.jpeg" },
-    { name: "Akanksha Kumari", role: "UI/UX Designer", image: "/mentors_photo/akanksha_kumari.jpg" },
-    { name: "Aman Gupta", role: "Cybersecurity Mentor", image: "/mentors_photo/aman_gupta.jpg" },
-    { name: "Aman Sharma", role: "AI Researcher", image: "/mentors_photo/aman_sharma.jpg" },
-    { name: "Amit Kumar", role: "Backend Developer", image: "/mentors_photo/amit_kumar.jpg" },
-    { name: "Amrit Raj", role: "Cloud Computing Mentor", image: "/mentors_photo/amrit_raj.jpg" },
-    { name: "Ankit Pandey", role: "DevOps Engineer", image: "/mentors_photo/ankit_pandey.jpg" },
-    { name: "Ayush Shivam", role: "Web Developer", image: "/mentors_photo/ayush_shivam.jpg" },
-    { name: "Ayush Tiwari", role: "Blockchain Mentor", image: "/mentors_photo/ayush_tiwari.jpg" },
-    { name: "Bhavika Vishnoi", role: "AI & ML Mentor", image: "/mentors_photo/bhavika_vishnoi.jpg" },
-    { name: "Dhreej Yadav", role: "Software Engineer", image: "/mentors_photo/dhreej_yadav.jpg" },
-    { name: "Disanti Ghosh", role: "Data Analyst", image: "/mentors_photo/disanti_ghosh.jpg" },
-    { name: "Gaurav Kumar Saha", role: "Cloud Solutions Architect", image: "/mentors_photo/gaurav_kumar_saha.png" },
-    { name: "Harsh Kumar", role: "Mobile App Developer", image: "/mentors_photo/harsh_kumar.jpg" },
-    { name: "Maniranjan", role: "IoT Mentor", image: "/mentors_photo/maniranjan.jpg" },
-    { name: "Mukesh Dhadhariya", role: "Robotics Mentor", image: "/mentors_photo/mukesh_dhadhariya.jpg" },
-    { name: "Nikhil Gupta", role: "Frontend Developer", image: "/mentors_photo/nikhil_gupta.jpg" },
-    { name: "Nishchay Gupta", role: "AI Product Manager", image: "/mentors_photo/nishchay_gupta.jpg" },
-    { name: "Nitin Gupta", role: "Full Stack Developer", image: "/mentors_photo/nitin_gupta.jpg" },
-    { name: "Parampreet Singh", role: "AI Researcher", image: "/mentors_photo/parampreet_singh.jpg" },
-    { name: "Parth Tiwari", role: "Software Engineer", image: "/mentors_photo/parth_tiwari.jpg" },
-    { name: "Prakhar Prakash", role: "Data Science Mentor", image: "/mentors_photo/prakhar_prakash.jpg" },
-    { name: "Prince Tiwari", role: "Backend Developer", image: "/mentors_photo/prince_tiwari.jpeg" },
-    { name: "Raj Kesharwani", role: "Cloud Computing Mentor", image: "/mentors_photo/raj_kesharwani.jpg" },
-    { name: "Rishab Kumar", role: "Cybersecurity Mentor", image: "/mentors_photo/rishab_kumar.jpg" },
-    { name: "Samriddhi Tripathi", role: "AI & ML Mentor", image: "/mentors_photo/samriddhi_tripathi.jpg" },
-    { name: "Sanyam Jain", role: "Mobile App Developer", image: "/mentors_photo/sanyam_jain.jpg" },
-    { name: "Shikhar Raj", role: "DevOps Engineer", image: "/mentors_photo/shikhar_raj.jpg" }
-  ];
-
+let mentors_28 = [
   
+
+ { name: "Vinayak Dixit", role: "AI Engineer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/vinayak_dixit.jpeg" },
+  { name: "Disanti Ghosh", role: "Data Analyst", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/disanti_ghosh.jpg" },
+  { name: "Jyoti Saxena", role: "Cybersecurity Expert", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/jyoti_saxena.jpg" },
+  { name: "Prakriti Aryan", role: "UI/UX Designer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/prakriti_aryan.jpg" },
+  { name: "Abhijeet Mishra", role: "Full Stack Developer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/abhijeet_mishra.jpg" },
+   { name: "Aditya Agrawal", role: "AI Engineer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/aditya_agrawal.jpg" },
+  { name: "Akanksha Kumari", role: "UI/UX Designer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/akanksha_kumari.jpg" },
+  { name: "Abhinav Shukla", role: "Data Science Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/abhinav_shukla.jpeg" },
+];
+
 export default mentors_28;

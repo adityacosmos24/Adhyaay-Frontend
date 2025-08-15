@@ -26,7 +26,7 @@ let mentors_27 = [
   { name: "Maniranjan", role: "IoT Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/maniranjan.jpg" },
   { name: "Mukesh Dhadhariya", role: "Robotics Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/mukesh_dhadhariya.jpg" },
   { name: "Nikhil Gupta", role: "Frontend Developer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/nikhil_gupta.jpg" },
-  { name: "Nishchay Gupta", role: "AI Product Manager", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/nishchay_gupta.jpg" },
+  
   { name: "Nitin Gupta", role: "Full Stack Developer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/nitin_gupta.jpg" },
   { name: "Parampreet Singh", role: "AI Researcher", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/parampreet_singh.jpg" },
   { name: "Parth Tiwari", role: "Software Engineer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/parth_tiwari.jpg" },
@@ -44,6 +44,7 @@ let mentors_27 = [
   { name: "Somil Gupta", role: "Blockchain Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/somil_gupta.jpg" },
   { name: "Srishti Priya", role: "Web Developer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/srishti_priya.jpg" },
   { name: "Utkarsh Rajput", role: "Cloud Solutions Architect", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/utkarsh_rajput.jpg" },
+  { name: "Nishchay Gupta", role: "AI Product Manager", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/nishchay_gupta.jpg" },
   { name: "Vaibhav Mishra", role: "Robotics Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/vaibhav_mishra.jpg" },
   
   { name: "Aman Gupta", role: "Cybersecurity Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/aman_gupta.jpg" },
