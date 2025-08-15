@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import { api } from "./lib/axios";
 import Footerdemo from "./components/Footer";
+import ManagementTeam from "./pages/ManagementTeam";
+import Councellors from "./pages/Councellors";
 import Mentors from "./pages/Mentors";
 
 const Home = lazy(() => import("./pages/Homepage"));
@@ -12,7 +14,6 @@ const Home = lazy(() => import("./pages/Homepage"));
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Check authentication on first load
   useEffect(() => {
     const checkAuth = async () => {
       try {
@@ -41,6 +42,8 @@ export default function App() {
             path="/login"
             element={<Login setIsAuthenticated={setIsAuthenticated} />}
           />
+          <Route path="/management-team" element={<ManagementTeam />} />
+          <Route path="/councellors" element={<Councellors />} />
           <Route path="/mentors" element={<Mentors />}/>
         </Routes>
       </Suspense>
