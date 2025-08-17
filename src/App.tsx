@@ -3,13 +3,13 @@ import { Suspense, lazy, useState, useEffect } from "react";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
-import { api } from "./lib/axios";
 import Footerdemo from "./components/Footer";
 import ManagementTeam from "./pages/ManagementTeam";
 import Councellors from "./pages/Councellors";
 import Mentors from "./pages/Mentors";
 import Booking from "./pages/Booking";
 import ScrollToTop from "./components/ScrollToTop"; // ✅ fixed path
+import {jwtDecode} from "jwt-decode";
 
 const Home = lazy(() => import("./pages/Homepage"));
 
@@ -17,11 +17,22 @@ export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const checkAuth = async () => {
+    const checkAuth = () => {
       try {
-        const res = await api.get("/auth/check", { withCredentials: true });
-        if (res.status === 200 && res.data?.authenticated) {
+        const token = localStorage.getItem("token"); // check localStorage
+        if (!token) {
+          setIsAuthenticated(false);
+          return;
+        }
+
+        // decode token to check expiry
+        const decoded: any = jwtDecode(token);
+        if (decoded.exp * 1000 > Date.now()) {
           setIsAuthenticated(true);
+        } else {
+          // expired
+          localStorage.removeItem("token");
+          setIsAuthenticated(false);
         }
       } catch {
         setIsAuthenticated(false);
@@ -32,8 +43,8 @@ export default function App() {
 
   return (
     <Router>
-      <ScrollToTop />  
-      
+      <ScrollToTop />
+
       <Navbar
         isAuthenticated={isAuthenticated}
         setIsAuthenticated={setIsAuthenticated}
