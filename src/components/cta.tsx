@@ -1,51 +1,50 @@
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Business from "../assets/Business.json";
+import Lottie from "lottie-react";
 
 export default function CTA() {
   const router = useNavigate();
   return (
-    
     <section className="flex py-16 md:py-20">
-      <div className="flex w-full max-w-7xl mx-auto items-center gap-8 px-6 md:px-10">
-        
-        {/* CTA Section (65%) */}
-        <div className="relative w-full md:w-[65%] overflow-hidden rounded-[40px] bg-orange-500 p-8 sm:p-12 md:p-20">
-          <div className="absolute inset-0 hidden h-full w-full overflow-hidden md:block">
-            <div className="absolute top-1/2 right-[-40%] aspect-square h-[900px] w-[900px] -translate-y-1/2">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
+        {/* Combined CTA + Animation Box */}
+        <div className="relative flex flex-col md:flex-row items-center justify-between overflow-hidden rounded-[40px] bg-orange-500 p-8 sm:p-12 md:p-16">
+          
+          {/* Background circles */}
+          <div className="absolute inset-0 hidden md:block">
+            <div className="absolute top-1/2 right-[-30%] aspect-square h-[900px] w-[900px] -translate-y-1/2">
               <div className="absolute inset-0 rounded-full bg-orange-400 opacity-30"></div>
               <div className="absolute inset-0 scale-[0.8] rounded-full bg-orange-300 opacity-30"></div>
               <div className="absolute inset-0 scale-[0.6] rounded-full bg-orange-200 opacity-30"></div>
               <div className="absolute inset-0 scale-[0.4] rounded-full bg-orange-100 opacity-30"></div>
-              <div className="absolute inset-0 scale-[0.2] rounded-full bg-orange-50 opacity-30"></div>
-              <div className="absolute inset-0 scale-[0.1] rounded-full bg-white/50 opacity-30"></div>
             </div>
           </div>
 
-          <div className="relative z-10">
-            <h1 className="mb-3 text-3xl font-bold text-white sm:text-4xl md:mb-4 md:text-5xl">
+          {/* CTA Text */}
+          <div className="relative z-10 w-full md:w-1/2 text-center md:text-left">
+            <h1 className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl">
               Let&apos;s Get In Touch.
             </h1>
-            <p className="mb-6 max-w-lg text-base text-white sm:text-lg md:mb-8">
+            <p className="mb-8 max-w-md text-base text-white sm:text-lg">
               Your laboratory instruments should serve you, not the other way
               around. We&apos;re happy to help you.
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
-              <button className="flex w-full items-center justify-between rounded-full bg-black px-6 py-3 text-white sm:w-[240px]" onClick={() => router("/councellors")}>
-                <span className="font-medium">Book Appointment</span>
-                <span className="h-5 w-5 flex-shrink-0 rounded-full bg-white"></span>
-              </button>
+            <button
+              className="flex items-center justify-between rounded-full bg-black px-6 py-3 text-white mx-auto md:mx-0 sm:w-[240px]"
+              onClick={() => router("/councellors")}
+            >
+              <span className="font-medium">Book Appointment</span>
+              <span className="h-5 w-5 flex-shrink-0 rounded-full bg-white"></span>
+            </button>
+          </div>
+          {/* Lottie Animation */}
+          <div className="relative z-10 w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <div className="w-full max-w-md">
+              <Lottie animationData={Business} loop={true} />
             </div>
-          </div>
+          </div>
         </div>
-
-        {/* Lottie Animation Section (35%) */}
-        <div className="hidden md:flex w-full md:w-[35%] items-center justify-center">
-          {/* Replace with your Lottie component */}
-          <div className="w-full h-[420px] bg-gray-100 flex items-center justify-center rounded-2xl">
-            <p className="text-gray-500">Lottie Animation Here</p>
-          </div>
-        </div>
-
       </div>
     </section>
   );

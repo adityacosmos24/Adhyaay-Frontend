@@ -7,6 +7,7 @@ import WrapButton from "./ui/wrap-button";
 import { Globe, SparklesIcon } from "lucide-react";
 import { AuroraText } from "./magicui/aurora-text";
 import { Badge } from "../components/ui/badge";
+import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   return (
@@ -51,12 +52,14 @@ const HeroSection: React.FC = () => {
             </p>
           </BoxReveal>
 
+          <Link to="/Councellors">
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
             <WrapButton className="mt-8" href="/Councellors">
               <Globe className="animate-spin mr-2" />
               Get started
             </WrapButton>
           </BoxReveal>
+          </Link>
         </div>
 
         {/* RIGHT - Animation + Sanskrit */}
