@@ -3,18 +3,20 @@ import AboutUs from '../components/AboutUs';
 import { Testimonial } from '../components/Testimonial';
 import { Events } from '../components/Events';
 import CTA from '../components/cta';
-import { Teams } from '../components/Teams';
 import Feature from '../components/Features';
+import { SmoothCursor } from '../components/ui/smooth-cursor';
+import Teams from '../components/Teams';
 export default function Home() {
   return (
     <div>
+      {/* <SmoothCursor /> */}
       <HeroSection />
       <AboutUs />
       {/* <Feature/> */}
       <Events/>
       <Teams/>
+      <Testimonial />
       <CTA/>
-      <Testimonial/>
     </div>
   );
 }

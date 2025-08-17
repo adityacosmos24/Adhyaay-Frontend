@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { api } from "../lib/axios";
 import toast from "react-hot-toast";
+import { SmoothCursor } from '../components/ui/smooth-cursor';
 
 const NAVBAR_HEIGHT = 64;
 
@@ -32,14 +33,16 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
   };
 
   const navItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
-    { name: "Events", href: "#counsellor" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Teams", href: "#counsellor" },
+    { name: "Services", href: "/Councellors" },
+    { name: "Contact", href: "management-team" },
   ];
 
   return (
+    <>
+    {/* <SmoothCursor /> */}
     <nav
       className="bg-white/80 backdrop-blur-md border-b border-white/20 shadow-lg fixed w-full z-50"
       style={{ height: NAVBAR_HEIGHT }}
@@ -147,5 +150,6 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
         </ul>
       )}
     </nav>
+    </>
   );
 }

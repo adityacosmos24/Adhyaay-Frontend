@@ -55,12 +55,6 @@ const features: FeatureItem[] = [
 const AboutUs: React.FC = () => {
   return (
     <section className="relative w-full py-20 overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gray-500/10 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
         {/* Header Section */}
 <div className="text-left mb-16">
@@ -80,9 +74,10 @@ const AboutUs: React.FC = () => {
   </h2>
 
   <p className="text-xl md:text-2xl text-gray-600 max-w-4xl leading-relaxed">
-    Adhyaay is the Counselling & Mentorship Cell of our institution,
-    dedicated to nurturing emotional well-being and guiding students through
-    every stage of their academic journey.
+    Adhyaay, the Counseling & Mentorship Cell of IIIT Bhagalpur, is committed to nurturing 
+    emotional well-being and guiding students through every stage of their academic 
+    journey. We create a safe, inclusive, and supportive environment where care meets 
+    clarity, ensuring no student has to walk alone. 
   </p>
 </div>
 
@@ -132,15 +127,15 @@ opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></
               </h3>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our counselling wing offers confidential one-on-one sessions with
-                trained external professionals who help students navigate stress,
-                anxiety, and personal challenges with empathy and care.
+                Our counseling wing offers confidential one-on-one sessions with trained professionals to 
+                help students manage stress, anxiety, and personal challenges with empathy and care. 
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our mentorship wing is driven by experienced seniors who share their
-                journey, provide academic and career guidance, and help juniors
-                adapt to college life with confidence.
+                Through our mentorship wing, experienced seniors share their journeys, provide 
+                academic and career guidance, and help juniors adapt to college life with confidence. 
+                Together, we foster holistic growth that goes beyond academics, shaping resilient and 
+                empowered individuals.
               </p>
             </div>
 
@@ -151,21 +146,15 @@ opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></
                 return (
                   <div
                     key={index}
-                    className="group relative rounded-xl p-6 bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700"
+                    className="group relative rounded-xl p-6 bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 flex flex-col items-start"
                   >
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-300 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-6 h-6 text-white" />
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-white mb-2">{feature.title}</h4>
-                        <p className="text-gray-400 text-sm leading-relaxed">
-                          {feature.description}
-                        </p>
-                      </div>
+                    <div className="w-12 h-12 mb-4 bg-gradient-to-br from-orange-500 to-orange-300 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
+                    <h4 className="text-lg font-semibold text-white mb-3">{feature.title}</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed flex-1">
+                      {feature.description}
+                    </p>
                   </div>
                 );
               })}

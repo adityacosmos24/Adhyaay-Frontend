@@ -2,22 +2,33 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "motion/react";
-import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
-
-export function Teams() {
+import { CanvasRevealEffect } from "../components/ui/canvas-reveal-effect";
+import { useNavigate, Link } from "react-router-dom";
+export default function Teams() {
+  const router = useNavigate();
   return (
-    <>
-    <div className="text-center py-10 text-4xl font-bold">
-        <h1>Teams</h1>
-    </div>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+    <div className="py-20">
+      
+      <h1
+        className="relative z-10 text-4xl md:text-5xl font-extrabold text-black mb-8 
+                   transition-transform duration-300 ease-out transform 
+                   hover:scale-105 hover:text-gray-800 cursor-pointer text-center"
+      >
+        Teams
+      </h1>
+
+      <div className=" flex flex-col lg:flex-row items-center justify-center dark:bg-black w-full gap-4 mx-auto px-8">
+        <Link to="/councellors" className="w-full">
+        <Card title="Councellors" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        </Link>
+
+        <Link to="/management-team" className="w-full">
+        <Card title="Leadership" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -30,15 +41,19 @@ export function Teams() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        </Link>
+
+        <Link to="/mentors" className="w-full">
+        <Card title="Mentors" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
             colors={[[125, 211, 252]]}
           />
         </Card>
+        </Link>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -56,7 +71,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
@@ -124,3 +139,4 @@ export const Icon = ({ className, ...rest }: any) => {
     </svg>
   );
 };
+

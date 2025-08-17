@@ -11,6 +11,7 @@ import { Eye, EyeOff } from "lucide-react";
 import CatPeeping from "../assets/CatPeeping.json";
 import { TextReveal } from '../components/ui/TextReveal';
 import { cn } from '../lib/utils';
+import { SmoothCursor } from '../components/ui/smooth-cursor';
 
 type RegisterFormValues = {
   name: string;
@@ -45,6 +46,8 @@ export default function Register() {
   };
 
   return (
+    <>
+    {/* <SmoothCursor /> */}
     <div className="relative h-screen flex overflow-hidden">
       {/* Background beams */}
       <BackgroundBeams className="absolute inset-0 w-full h-full z-0" />
@@ -168,5 +171,6 @@ export default function Register() {
         <Lottie animationData={CatPeeping} loop autoplay />
       </div>
     </div>
+    </>
   );
 }

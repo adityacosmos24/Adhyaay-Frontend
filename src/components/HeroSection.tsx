@@ -32,14 +32,15 @@ const HeroSection: React.FC = () => {
         <div className="flex-1 flex flex-col justify-center items-start md:items-start gap-4">
           <Badge
             variant="outline"
-            className="mb-3 cursor-pointer rounded-[14px] border border-black/10 bg-white text-lg"
+            className="mb-3 cursor-pointer rounded-[14px] border border-black/10 bg-white text-lg scale-110"
           >
             <SparklesIcon className="mr-2 fill-[#EEBDE0] stroke-1 text-neutral-800" />
             IIIT Bhagalpur
           </Badge>
 
+
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
+            <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
               Welcome to 
             </h1>
           </BoxReveal>
@@ -51,7 +52,7 @@ const HeroSection: React.FC = () => {
           </BoxReveal>
 
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
-            <WrapButton className="mt-8" href="/services">
+            <WrapButton className="mt-8" href="/Councellors">
               <Globe className="animate-spin mr-2" />
               Get started
             </WrapButton>

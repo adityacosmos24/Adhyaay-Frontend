@@ -9,6 +9,7 @@ import ManagementTeam from "./pages/ManagementTeam";
 import Councellors from "./pages/Councellors";
 import Mentors from "./pages/Mentors";
 import Booking from "./pages/Booking";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ fixed path
 
 const Home = lazy(() => import("./pages/Homepage"));
 
@@ -31,10 +32,13 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />  
+      
       <Navbar
         isAuthenticated={isAuthenticated}
         setIsAuthenticated={setIsAuthenticated}
       />
+
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,11 +49,12 @@ export default function App() {
           />
           <Route path="/management-team" element={<ManagementTeam />} />
           <Route path="/councellors" element={<Councellors />} />
-          <Route path="/mentors" element={<Mentors />}/>
-          <Route path="/book" element={<Booking />}/>
+          <Route path="/mentors" element={<Mentors />} />
+          <Route path="/book" element={<Booking />} />
         </Routes>
       </Suspense>
-      <Footerdemo/>
+
+      <Footerdemo />
     </Router>
   );
 }

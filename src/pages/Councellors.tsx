@@ -6,10 +6,14 @@ import { SparklesIcon } from "lucide-react";
 import { Button } from "../components/ui/button"; // shadcn Button
 import Councellingbenifits,{ services_data as services_data } from "../components/Councellingbenifits"; 
 import Councellorsinfo,{ teamMembers3D as teamMembers3D} from "../components/Councellorsinfo";
+import { SmoothCursor } from '../components/ui/smooth-cursor';
+import { useNavigate } from "react-router-dom";
 
 export default function Councellors() {
+  const router = useNavigate();
   return (
     <>
+    {/* <SmoothCursor /> */}
     <section className="flex flex-col md:flex-row items-center justify-between w-full h-screen px-6 md:px-16">
       {/* Left Side - Text */}
       <div className="w-full md:w-2/5 space-y-4 md:space-y-6">
@@ -34,8 +38,9 @@ export default function Councellors() {
         <Button
           size="lg"
           className="mt-4 rounded-xl bg-orange-600 text-white hover:bg-orange-500"
+          onClick={() => router("/book")}
         >
-          Book Appointment
+          Book Your Session
         </Button>
       </div>
 

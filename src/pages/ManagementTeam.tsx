@@ -6,6 +6,7 @@ import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import TechTeam, { dami_data as techTeamData } from "../components/ui/tech-team";
 import SocialMediaTeam, { dami_data as socialTeamData } from "../components/ui/social-media-team";
 import Coordinator, { dami_data as coordinatorData } from "../components/ui/cordinator";
+import { SmoothCursor } from '../components/ui/smooth-cursor';
 
 export default function ManagementTeam() {
   const words = [
@@ -39,6 +40,8 @@ export default function ManagementTeam() {
   ];
 
   return (
+    <>
+    {/* <SmoothCursor /> */}
     <div className="pt-16 flex flex-col items-center gap-10 w-full bg-gray-50">
       {/* Animated Heading */}
       <TypewriterEffectSmooth words={words} />
@@ -106,5 +109,6 @@ export default function ManagementTeam() {
       {/* Spacer */}
       <div className="h-24"></div>
     </div>
+    </>
   );
 }
