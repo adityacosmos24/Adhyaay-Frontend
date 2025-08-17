@@ -41,7 +41,7 @@ export function Testimonial() {
   ];
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center py-16 px-6">
+    <div className="w-full py-20 flex items-center justify-center px-6">
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-10">
         
         {/* LEFT - Heading */}

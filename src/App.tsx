@@ -42,15 +42,14 @@ export default function App() {
   }, []);
 
   return (
+  <Suspense fallback={<div>Loading...</div>}>
     <Router>
-      <ScrollToTop />
-
       <Navbar
         isAuthenticated={isAuthenticated}
         setIsAuthenticated={setIsAuthenticated}
       />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <ScrollToTop />  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
@@ -63,9 +62,9 @@ export default function App() {
           <Route path="/mentors" element={<Mentors />} />
           <Route path="/book" element={<Booking />} />
         </Routes>
-      </Suspense>
 
       <Footerdemo />
     </Router>
+  </Suspense>
   );
 }
