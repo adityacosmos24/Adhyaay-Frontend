@@ -1,31 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { api } from "../lib/axios";
 
-interface FormData {
+interface Mentor {
+  _id: string;
   name: string;
   email: string;
+}
+
+interface FormData {
+  juniorName: string;   // instead of name
+  juniorEmail: string;
   semester: string;
-  issue: string;
+  description: string;
   mentor: string;
   date: string;
 }
 
 const BookingComponent: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
+    juniorName: "",
+    juniorEmail: "",
     semester: "",
-    issue: "",
+    description: "",
     mentor: "",
     date: "",
   });
 
-  const mentors = [
-    "Dr. Sarah Johnson",
-    "Prof. Michael Chen",
-    "Dr. Emily Rodriguez",
-    "Dr. James Wilson",
-    "Prof. Lisa Thompson",
-  ];
+  const [mentors, setMentors] = useState<Mentor[]>([]);
+
+  // fetch mentors from backend
+  useEffect(() => {
+    const fetchMentors = async () => {
+      try {
+        const res = await api.get("/mentors"); // adjust to your route
+        setMentors(res.data);
+      } catch (err) {
+        console.error("Failed to fetch mentors", err);
+      }
+    };
+    fetchMentors();
+  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -39,10 +53,31 @@ const BookingComponent: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (): void => {
-    console.log("Appointment booked:", formData);
+  const handleSubmit = async (): Promise<void> => {
+  try {
+    const payload = {
+      ...formData,
+      date: new Date(formData.date).toISOString(), // 👈 convert
+    };
+
+    console.log("Submitting payload:", payload);
+    const res = await api.post("/appointments", payload);
+
     alert("Appointment request submitted successfully!");
-  };
+    setFormData({
+      juniorName: "",
+      juniorEmail: "",
+      semester: "",
+      description: "",
+      mentor: "",
+      date: "",
+    });
+  } catch (err) {
+    console.error(err);
+    alert("Error booking appointment.");
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -54,20 +89,20 @@ const BookingComponent: React.FC = () => {
         <div className="space-y-4">
           <input
             type="text"
-            name="name"
+            name="juniorName"
             placeholder="Your Name"
-            value={formData.name}
+            value={formData.juniorName}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
             type="email"
-            name="email"
+            name="juniorEmail"
             placeholder="Email"
-            value={formData.email}
+            value={formData.juniorEmail}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
@@ -76,30 +111,30 @@ const BookingComponent: React.FC = () => {
             placeholder="Semester"
             value={formData.semester}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <textarea
-            name="issue"
+            name="description"
             placeholder="Describe your issue..."
-            value={formData.issue}
+            value={formData.description}
             onChange={handleInputChange}
             rows={3}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 resize-none"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
           />
 
           <select
             name="mentor"
             value={formData.mentor}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
           >
             <option value="" disabled>
               Select a Mentor
             </option>
-            {mentors.map((mentor, index) => (
-              <option key={index} value={mentor}>
-                {mentor}
+            {mentors.map((mentor) => (
+              <option key={mentor._id} value={mentor._id}>
+                {mentor.name}
               </option>
             ))}
           </select>
@@ -109,7 +144,7 @@ const BookingComponent: React.FC = () => {
             name="date"
             value={formData.date}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
           />
 
           <button

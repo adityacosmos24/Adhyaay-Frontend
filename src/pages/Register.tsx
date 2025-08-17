@@ -11,7 +11,7 @@ import { Eye, EyeOff } from "lucide-react";
 import CatPeeping from "../assets/CatPeeping.json";
 import { TextReveal } from '../components/ui/TextReveal';
 import { cn } from '../lib/utils';
-import { SmoothCursor } from '../components/ui/smooth-cursor';
+// import { SmoothCursor } from '../components/ui/smooth-cursor';
 
 type RegisterFormValues = {
   name: string;
@@ -28,22 +28,28 @@ export default function Register() {
   const { register, handleSubmit, formState: { errors } } = useForm<RegisterFormValues>();
 
   const onSubmit = async (data: RegisterFormValues) => {
-    setServerError(null);
-    try {
-      setLoading(true);
-      const res = await api.post("/auth/signup", data);
-      if (res.status === 201) {
+  setServerError(null);
+  try {
+    setLoading(true);
+    const res = await api.post("/auth/signup", data);
+
+    if (res.status === 201) {
+      // ✅ Save token if backend returns one
+      if (res.data.token) {
         localStorage.setItem("token", res.data.token);
-        toast.success("Registration successful!");
-        navigate("/");
       }
-    } catch (error: any) {
-      setServerError(error.response?.data?.message || "Registration failed");
-      toast.error("Registration failed. Please try again.");
-    } finally {
-      setLoading(false);
+
+      toast.success("Registration successful!");
+      navigate("/");
     }
-  };
+  } catch (error: any) {
+    setServerError(error.response?.data?.message || "Registration failed");
+    toast.error("Registration failed. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <>

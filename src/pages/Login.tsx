@@ -11,7 +11,7 @@ import { Eye, EyeOff } from "lucide-react";
 import CatPeeping from "../assets/CatPeeping.json";
 import { TextReveal } from "../components/ui/TextReveal";
 import { cn } from '../lib/utils';
-import { SmoothCursor } from '../components/ui/smooth-cursor';
+// import { SmoothCursor } from '../components/ui/smooth-cursor';
 
 type LoginFormInputs = {
   email: string;
@@ -27,22 +27,29 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
   const { register, handleSubmit, formState: { errors } } = useForm<LoginFormInputs>();
 
   const onSubmit = async (data: LoginFormInputs) => {
-    setServerError(null);
-    try {
-      setLoading(true);
-      const res = await api.post("/auth/login", data, { withCredentials: true });
-      if (res.status === 200) {
-        setIsAuthenticated(true);
-        toast.success("Login successful!");
-        navigate("/");
+  setServerError(null);
+  try {
+    setLoading(true);
+    const res = await api.post("/auth/login", data, { withCredentials: true });
+
+    if (res.status === 200) {
+      // ✅ save token in localStorage
+      if (res.data.token) {
+        localStorage.setItem("token", res.data.token);
       }
-    } catch (error: any) {
-      setServerError(error.response?.data?.message || "Login failed");
-      toast.error("Login failed. Please try again.");
-    } finally {
-      setLoading(false);
+
+      setIsAuthenticated(true);
+      toast.success("Login successful!");
+      navigate("/");
     }
-  };
+  } catch (error: any) {
+    setServerError(error.response?.data?.message || "Login failed");
+    toast.error("Login failed. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <>
