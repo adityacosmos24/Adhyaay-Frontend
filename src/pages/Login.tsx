@@ -130,10 +130,6 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
     <p className="text-red-600 text-sm mt-1">{errors.password.message}</p>
   )}
 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 09a9beeeb2735639f665668f26f4ea18070297df
 
           {/* Server error */}
           {serverError && <p className="text-red-600 mb-4">{serverError}</p>}

@@ -56,8 +56,7 @@ const HeroSection: React.FC = () => {
             <p
               className="text-xl md:text-2xl font-semibold tracking-wide text-center 
                         bg-black 
-                        bg-clip-text text-transparent drop-shadow-sm 
-                        transition-all duration-500 ease-in-out hover:scale-105"
+                        bg-clip-text text-transparent drop-shadow-sm"
             >
               Counselling & Mentorship Cell for IIIT Bhagalpur
             </p>
