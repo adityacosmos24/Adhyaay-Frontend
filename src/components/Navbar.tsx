@@ -132,14 +132,14 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
           ) : (
             <>
               <li>
-                <Button asChild className="w-full bg-blue-900 text-white px-4 py-2 rounded-md">
+                <Button asChild className="w-full bg-[#fe7500] text-white px-4 py-2 rounded-md">
                   <Link to="/login" onClick={() => setIsOpen(false)}>
                     Sign In
                   </Link>
                 </Button>
               </li>
               <li>
-                <Button asChild className="w-full border border-blue-900 text-blue-900 px-4 py-2 rounded-md">
+                <Button asChild className="w-full border bg-[#fe7500] text-white px-4 py-2 rounded-md">
                   <Link to="/register" onClick={() => setIsOpen(false)}>
                     Sign Up
                   </Link>

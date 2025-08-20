@@ -102,31 +102,46 @@ export default function Register() {
             {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
-          {/* Password */}
-          <div className="mb-6 relative">
-            <label htmlFor="password" className="block mb-1 text-sm font-medium text-black">
+{/* Password */}
+                    <div className="mb-6">
+            <label
+              htmlFor="password"
+              className="block mb-1 text-sm font-medium text-black"
+            >
               Password
             </label>
-            <Input
-              id="password"
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              {...register("password", {
-                required: "Password is required",
-                minLength: { value: 6, message: "Password must be at least 6 characters" },
-              })}
-              className="text-black pr-10"
-            />
-            <button
-              type="button"
-              onClick={() => setShowPassword(prev => !prev)}
-              className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500 hover:text-black focus:outline-none"
-              tabIndex={-1}
-              aria-label={showPassword ? "Hide password" : "Show password"}
-            >
-              {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-            </button>
-            {errors.password && <p className="text-red-600 text-sm mt-1">{errors.password.message}</p>}
+
+            <div className="relative">
+              <Input
+                id="password"
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                {...register("password", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 6,
+                    message: "Password must be at least 6 characters",
+                  },
+                })}
+                className="text-black pr-10"
+              />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword((prev) => !prev)}
+                className="absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-black focus:outline-none"
+                tabIndex={-1}
+                aria-label={showPassword ? "Hide password" : "Show password"}
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
+            </div>
+
+            {errors.password && (
+              <p className="text-red-600 text-sm mt-1">
+                {errors.password.message}
+              </p>
+            )}
           </div>
 
           {/* Server error */}

@@ -4,6 +4,8 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "../components/ui/canvas-reveal-effect";
 import { useNavigate, Link } from "react-router-dom";
+import { GlareCard } from "../components/ui/glare-card";
+
 export default function Teams() {
   const router = useNavigate();
   return (
@@ -17,42 +19,31 @@ export default function Teams() {
         Teams
       </h1>
 
-      <div className=" flex flex-col lg:flex-row items-center justify-center dark:bg-black w-full gap-4 mx-auto px-8">
-        <Link to="/councellors" className="w-full">
-        <Card title="Councellors" icon={<AceternityIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
-        </Link>
+<div className="flex items-center justify-center">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-34">
+    <GlareCard className="flex flex-col items-center justify-center">
+     <img
+        className="h-full w-full absolute inset-0 object-cover"
+        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+    </GlareCard>
 
-        <Link to="/management-team" className="w-full">
-        <Card title="Leadership" icon={<AceternityIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
-          {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
-        </Card>
-        </Link>
+    <GlareCard className="flex flex-col items-center justify-center relative">
+      <img
+        className="h-full w-full absolute inset-0 object-cover"
+        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+    </GlareCard>
 
-        <Link to="/mentors" className="w-full">
-        <Card title="Mentors" icon={<AceternityIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
-        </Link>
-      </div>
+    <GlareCard className="flex flex-col items-center justify-center">
+     <img
+        className="h-full w-full absolute inset-0 object-cover"
+        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+    </GlareCard>
+  </div>
+</div>
+
     </div>
   );
 }

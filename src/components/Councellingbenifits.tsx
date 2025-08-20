@@ -12,22 +12,22 @@ export const services_data: Service[] = [
   {
     id: 1,
     title: 'Therapy',
-    description: 'Personalized one-on-one sessions to help you overcome challenges, improve mental health, and achieve emotional balance.',
+    description: 'Personalized one-on-one sessions to overcome challenges, strengthen mental health, and restore emotional balance. ',
   },
   {
     id: 2,
-    title: 'Remove Negative',
-    description: 'Guided techniques to release negative thoughts and emotions, allowing you to focus on positivity and personal growth.',
+    title: 'Remove Negative Energy',
+    description: 'Guided methods to release negative thoughts and emotions, fostering positivity and personal growth.',
   },
   {
     id: 3,
     title: 'Relief Stress',
-    description: 'Effective stress management methods including mindfulness, relaxation exercises, and breathing practices for a calmer mind.',
+    description: 'Mindfulness, relaxation, and breathing practices to manage stress and achieve a calm, focused mind. ',
   },
   {
     id: 4,
     title: 'Exercise',
-    description: 'Customized physical activity plans to boost energy, improve mood, and maintain overall mental and physical well-being.',
+    description: 'Customized physical activity plans to boost energy, uplift mood, and maintain overall well-being.',
   },
 ];
 

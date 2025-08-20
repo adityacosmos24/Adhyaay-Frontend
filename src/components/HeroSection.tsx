@@ -4,7 +4,7 @@ import welcomeAnim from "../assets/Welcome2.json";
 import { Particles } from "../components/magicui/particles";
 import { BoxReveal } from "../components/magicui/box-reveal";
 import WrapButton from "./ui/wrap-button";
-import { Globe, SparklesIcon } from "lucide-react";
+import { Box, Globe, SparklesIcon } from "lucide-react";
 import { AuroraText } from "./magicui/aurora-text";
 import { Badge } from "../components/ui/badge";
 import { Link } from "react-router-dom";
@@ -31,13 +31,13 @@ const HeroSection: React.FC = () => {
         
         {/* LEFT - Text */}
         <div className="flex-1 flex flex-col justify-center items-start md:items-start gap-4">
-          <Badge
+          {/* <Badge
             variant="outline"
             className="mb-3 cursor-pointer rounded-[14px] border border-black/10 bg-white text-lg scale-110"
           >
             <SparklesIcon className="mr-2 fill-[#EEBDE0] stroke-1 text-neutral-800" />
             IIIT Bhagalpur
-          </Badge>
+          </Badge> */}
 
 
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
@@ -49,6 +49,17 @@ const HeroSection: React.FC = () => {
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
             <p className="text-8xl md:text-9xl font-bold py-3">
               <AuroraText>ADHYAAY</AuroraText>
+            </p>
+          </BoxReveal>
+          
+          <BoxReveal boxColor={"#f97316"} duration={0.5}>
+            <p
+              className="text-xl md:text-2xl font-semibold tracking-wide text-center 
+                        bg-black 
+                        bg-clip-text text-transparent drop-shadow-sm 
+                        transition-all duration-500 ease-in-out hover:scale-105"
+            >
+              Counselling & Mentorship Cell for IIIT Bhagalpur
             </p>
           </BoxReveal>
 

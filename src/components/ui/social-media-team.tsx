@@ -16,7 +16,7 @@ export const dami_data: TeamMember[] = [
     id: 1,
     name: 'Kadir Miye',
     role: 'Chief Executive Officer',
-    image: 'https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833554.jpg',
+     image: '../src/assets/Shradha.jpg',
     linkedin: 'https://www.linkedin.com/in/kadirmiye',
   },
   {

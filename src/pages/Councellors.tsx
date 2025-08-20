@@ -26,8 +26,8 @@ export default function Councellors() {
         </Badge>
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-snug">
-          Discover Your <span className="text-orange-600">True Potential</span>
-          <br /> with Personalized Guidance
+          Uncover Your <span className="text-orange-600">True Potential</span>
+          <br /> Expert Support
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-lg text-gray-600">

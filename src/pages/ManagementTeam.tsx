@@ -17,10 +17,10 @@ export default function ManagementTeam() {
 
   const teamProfiles = [
     {
-      name: "Kadir Miye",
-      role: "CEO",
+      name: "Prof. Madhusudan Singh",
+      role: "Director IIIT Bhagalpur",
       quote: "Leadership is unlocking people's potential to become better.",
-      src: "../src/assets/Shradha.jpg",
+      src: "../../src/assets/Director3.png",
       linkedin: "https://linkedin.com/in/kadirmiye",
     },
     {
@@ -35,6 +35,13 @@ export default function ManagementTeam() {
       role: "COO",
       quote: "Operations is the backbone of any great organization.",
       src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop",
+      linkedin: "https://linkedin.com/in/zainabrahman",
+    },
+    {
+      name: "Shraddha Sahu",
+      role: "SECRETARY",
+      quote: "Operations is the backbone of any great organization.",
+      src: "../src/assets/Shradha.jpg",
       linkedin: "https://linkedin.com/in/zainabrahman",
     },
   ];
