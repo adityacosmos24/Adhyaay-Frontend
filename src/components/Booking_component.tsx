@@ -92,9 +92,9 @@ const BookingComponent: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center p-6">
-      <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md border border-gray-100">
-        <h1 className="text-2xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
-          Book a Counselling Appointment
+    <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-2 w-full max-w-md border border-gray-100">
+    <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+          Book a Session
         </h1>
 
         <div className="space-y-4">
