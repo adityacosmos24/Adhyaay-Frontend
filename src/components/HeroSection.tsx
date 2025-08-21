@@ -62,14 +62,14 @@ const HeroSection: React.FC = () => {
             </p>
           </BoxReveal>
 
-          <Link to="/Councellors">
+          
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
             <WrapButton className="mt-8" href="/Councellors">
               <Globe className="animate-spin mr-2" />
               Get started
             </WrapButton>
           </BoxReveal>
-          </Link>
+         
         </div>
 
         {/* RIGHT - Animation + Sanskrit */}
