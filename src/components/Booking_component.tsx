@@ -29,13 +29,33 @@ const BookingComponent: React.FC = () => {
 
   const [mentors, setMentors] = useState<Mentor[]>([]);
 
+  // Fetch user info from /me
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        if (!token) return;
+        const res = await api.get("/auth/me", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        setFormData((prev) => ({
+          ...prev,
+          juniorName: res.data.name || "",
+          juniorEmail: res.data.email || "",
+        }));
+      } catch (err) {
+        // Optional: toast.error("Failed to load user info");
+      }
+    };
+    fetchUser();
+  }, []);
+
   useEffect(() => {
     const fetchMentors = async () => {
       try {
         const res = await api.get("/mentors");
         setMentors(res.data);
       } catch (err) {
-        console.error("Failed to fetch mentors", err);
         toast.error("Failed to load mentors. Try again later.");
       }
     };
@@ -85,15 +105,14 @@ const BookingComponent: React.FC = () => {
         date: "",
       });
     } catch (err) {
-      console.error(err);
       toast.error("Error booking appointment. Please try again.");
     }
   };
 
   return (
     <div className="flex items-center justify-center p-6">
-    <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-2 w-full max-w-md border border-gray-100">
-    <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-2 w-full max-w-md border border-gray-100">
+        <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
           Book a Session
         </h1>
 
@@ -105,6 +124,7 @@ const BookingComponent: React.FC = () => {
             value={formData.juniorName}
             onChange={handleInputChange}
             className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+            readOnly // User can't edit
           />
 
           <input
@@ -114,8 +134,10 @@ const BookingComponent: React.FC = () => {
             value={formData.juniorEmail}
             onChange={handleInputChange}
             className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+            readOnly // User can't edit
           />
 
+          {/* ...rest of your form remains same... */}
           <input
             type="text"
             name="semester"

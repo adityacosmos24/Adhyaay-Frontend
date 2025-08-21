@@ -21,26 +21,83 @@ export default function Teams() {
 
 <div className="flex items-center justify-center">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-34">
-    <GlareCard className="flex flex-col items-center justify-center">
-     <img
-        className="h-full w-full absolute inset-0 object-cover"
-        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
-    </GlareCard>
 
-    <GlareCard className="flex flex-col items-center justify-center relative">
-      <img
-        className="h-full w-full absolute inset-0 object-cover"
-        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
-    </GlareCard>
-
+<Link to="/mentors">
     <GlareCard className="flex flex-col items-center justify-center">
-     <img
-        className="h-full w-full absolute inset-0 object-cover"
-        src="https://images.unsplash.com/photo-1512618831669-521d4b375f5d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
+      <svg
+        width="66"
+        height="65"
+        viewBox="0 0 66 65"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-7 w-7 text-neutral-700" // ⬅️ Softer gray tone instead of pure white/black
+      >
+        <path
+          d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+          stroke="currentColor"
+          strokeWidth="15"
+          strokeMiterlimit="3.86874"
+          strokeLinecap="round"
+        />
+      </svg>
+
+      <p className="text-neutral-800 font-bold text-xl mt-4">
+        Mentors
+      </p>
     </GlareCard>
+</Link>
+
+<Link to="management-team">
+<GlareCard className="flex flex-col items-center justify-center">
+  <svg
+    width="66"
+    height="65"
+    viewBox="0 0 66 65"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-7 w-7 text-neutral-700" // ⬅️ Softer gray tone instead of pure white/black
+  >
+    <path
+      d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+      stroke="currentColor"
+      strokeWidth="15"
+      strokeMiterlimit="3.86874"
+      strokeLinecap="round"
+    />
+  </svg>
+
+  <p className="text-neutral-800 font-bold text-xl mt-4">
+    Leadership
+  </p>
+</GlareCard>
+</Link>
+<Link to="/Councellors">
+<GlareCard className="flex flex-col items-center justify-center">
+  <svg
+    width="66"
+    height="65"
+    viewBox="0 0 66 65"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-7 w-7 text-neutral-700" // ⬅️ Softer gray tone instead of pure white/black
+  >
+    <path
+      d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+      stroke="currentColor"
+      strokeWidth="15"
+      strokeMiterlimit="3.86874"
+      strokeLinecap="round"
+    />
+  </svg>
+
+  <p className="text-neutral-800 font-bold text-xl mt-4">
+    Counsellor
+  </p>
+</GlareCard>
+
+</Link>
+
+
   </div>
 </div>
 

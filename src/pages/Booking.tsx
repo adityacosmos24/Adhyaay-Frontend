@@ -3,9 +3,13 @@ import BookingComponent from "../components/Booking_component";
 import backgroundBooking from "../assets/background-booking.png";
 import appointmentAnim from "../assets/appointmentAnimation.json";
 import Lottie from "lottie-react";
+import ScrollToTop from "../components/ScrollToTop"; // ✅ fixed path
+
 
 function Booking() {
   return (
+    <>
+    <ScrollToTop />
     <div
       className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 md:px-8 bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundBooking})` }}
@@ -28,6 +32,7 @@ function Booking() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
