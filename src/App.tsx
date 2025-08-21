@@ -61,9 +61,11 @@ export default function App() {
           <Route path="/councellors" element={<Councellors />} />
           <Route path="/mentors" element={<Mentors />} />
           <Route path="/book" element={<Booking />} />
-        </Routes>
+        </Routes> 
 
-      <Footerdemo />
+      <div id="footer">
+        <Footerdemo />
+      </div>
     </Router>
   </Suspense>
   );

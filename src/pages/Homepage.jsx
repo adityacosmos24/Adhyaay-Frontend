@@ -9,12 +9,17 @@ import Teams from '../components/Teams';
 export default function Home() {
   return (
     <div>
-      {/* <SmoothCursor /> */}
+    
       <HeroSection />
-      <AboutUs />
-      {/* <Feature/> */}
+      <div id="aboutus">
+        <AboutUs />
+      </div>
+      
+      
       <Events/>
-      <Teams/>
+      <div id="teams">
+        <Teams/>
+      </div>
       <Testimonial />
       <CTA/>
     </div>
