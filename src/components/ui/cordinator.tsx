@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useRef } from 'react';
 import { cn } from '../../lib/utils';
 import { ChevronLeft, ChevronRight, Phone } from 'lucide-react';
@@ -19,44 +17,37 @@ export type TeamMember = {
 export const dami_data: TeamMember[] = [
   {
     id: 1,
-    name: 'Kadir Miye',
+    name: 'Vinayak Dixit',
     role: 'Chief Executive Officer',
-    image: 'https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833554.jpg',
+    image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/vinayak_dixit.jpeg",
     socialMedia: { linkedin: 'https://linkedin.com/in/kadirmiye' },
   },
   {
     id: 2,
-    name: 'Isabella Thompson',
+    name: 'Prince Tiwari',
     role: 'Chief Technology Officer',
-    image: 'https://img.freepik.com/premium-photo/png-headset-headphones-portrait-cartoon_53876-762197.jpg',
+    image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/prince_tiwari.jpeg",
     socialMedia: { linkedin: 'https://linkedin.com/in/isabellathompson' },
   },
   {
     id: 3,
-    name: 'Zainab Rahman',
+    name: 'Sandeep',
     role: 'Chief Operations Officer',
-    image: 'https://img.freepik.com/premium-photo/png-cartoon-portrait-glasses-white-background_53876-905385.jpg',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/sandeep.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/zainabrahman' },
   },
   {
     id: 4,
-    name: 'Aiden Davis',
+    name: 'Disanti Ghosh',
     role: 'Chief Marketing Officer',
-    image: 'https://img.freepik.com/premium-psd/3d-avatar-character_975163-690.jpg',
+    image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/disanti_ghosh.jpg",
     socialMedia: { linkedin: 'https://linkedin.com/in/aidendavis' },
   },
   {
     id: 5,
-    name: 'Aiden Davis',
+    name: 'Aman Gupta',
     role: 'Chief Marketing Officer',
-    image: 'https://img.freepik.com/premium-psd/3d-avatar-character_975163-690.jpg',
-    socialMedia: { linkedin: 'https://linkedin.com/in/aidendavis' },
-  },
-  {
-    id: 6,
-    name: 'Aiden Davis',
-    role: 'Chief Marketing Officer',
-    image: 'https://img.freepik.com/premium-psd/3d-avatar-character_975163-690.jpg',
+    image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/aman_gupta.jpg",
     socialMedia: { linkedin: 'https://linkedin.com/in/aidendavis' },
   },
 ];

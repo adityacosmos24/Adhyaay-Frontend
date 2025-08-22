@@ -28,11 +28,11 @@ export function Events() {
 const SkeletonOne = () => (
   <div className="bg-transparent">
     <p className="font-bold md:text-4xl text-xl text-white">
-      House in the woods
+      {/* House in the woods */}
     </p>
     <p className="my-4 max-w-lg text-neutral-200">
-      A serene and tranquil retreat, this house in the woods offers a peaceful
-      escape from the hustle and bustle of city life.
+      {/* A serene and tranquil retreat, this house in the woods offers a peaceful
+      escape from the hustle and bustle of city life. */}
     </p>
   </div>
 );
@@ -40,12 +40,12 @@ const SkeletonOne = () => (
 const SkeletonTwo = () => (
   <div className="bg-transparent">
     <p className="font-bold md:text-4xl text-xl text-white">
-      House above the clouds
+      {/* House above the clouds */}
     </p>
     <p className="my-4 max-w-lg text-neutral-200">
-      Perched high above the world, this house offers breathtaking views and a
+      {/* Perched high above the world, this house offers breathtaking views and a
       unique living experience. It&apos;s a place where the sky meets home, and
-      tranquility is a way of life.
+      tranquility is a way of life. */}
     </p>
   </div>
 );
@@ -53,11 +53,11 @@ const SkeletonTwo = () => (
 const SkeletonThree = () => (
   <div className="bg-transparent">
     <p className="font-bold md:text-4xl text-xl text-white">
-      Greens all over
+      {/* Greens all over */}
     </p>
     <p className="my-4 max-w-lg text-neutral-200">
-      A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-      perfect place to relax, unwind, and enjoy life.
+      {/* A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
+      perfect place to relax, unwind, and enjoy life. */}
     </p>
   </div>
 );
@@ -65,11 +65,11 @@ const SkeletonThree = () => (
 const SkeletonFour = () => (
   <div className="bg-transparent">
     <p className="font-bold md:text-4xl text-xl text-white">
-      Rivers are serene
+      {/* Rivers are serene */}
     </p>
     <p className="my-4 max-w-lg text-neutral-200">
-      A house by the river is a place of peace and tranquility. It&apos;s the
-      perfect place to relax, unwind, and enjoy life.
+      {/* A house by the river is a place of peace and tranquility. It&apos;s the
+      perfect place to relax, unwind, and enjoy life. */}
     </p>
   </div>
 );
@@ -80,28 +80,24 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2 bg-transparent",
-    thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop",
+    thumbnail: "https://ik.imagekit.io/mwwyrq9z8/image1.png", // ✅ local image
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1 bg-transparent",
-    thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop",
+    thumbnail: "https://ik.imagekit.io/mwwyrq9z8/image2.png", // ✅ local image
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1 bg-transparent",
-    thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop",
+    thumbnail: "https://ik.imagekit.io/mwwyrq9z8/Event3.jpg", // ✅ local image
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2 bg-transparent",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop",
+    thumbnail: "https://ik.imagekit.io/mwwyrq9z8/image4.png", // ✅ local image
   },
 ];
