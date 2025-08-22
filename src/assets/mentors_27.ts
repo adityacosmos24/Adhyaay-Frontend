@@ -33,7 +33,7 @@ let mentors_27 = [
   { name: "Prakhar Prakash", role: "Data Science Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/prakhar_prakash.jpg" },
   { name: "Raj Kesharwani", role: "Cloud Computing Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/raj_kesharwani.jpg" },
   { name: "Rishab Kumar", role: "Cybersecurity Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/rishab_kumar.jpg" },
-  { name: "Samriddhi Tripathi", role: "AI & ML Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/samriddhi_tripathi.jpg" },
+  { name: "Samriddhi Tripathi", role: "AI & ML Mentor", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/samriddhi_tripathi1.jpg" },
   { name: "Sanyam Jain", role: "Mobile App Developer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/sanyam_jain.jpg" },
   { name: "Shikhar Rai", role: "DevOps Engineer", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/shikhar_rai.jpg" },
   { name: "Shivanshu Pandey", role: "Data Analyst", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/shivanshu_pandey.jpeg" },
