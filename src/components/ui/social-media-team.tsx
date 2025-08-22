@@ -14,23 +14,25 @@ export type TeamMember = {
 export const dami_data: TeamMember[] = [
   {
     id: 1,
-    name: 'Kadir Miye',
-    role: 'Chief Executive Officer',
-     image: '../src/assets/Shradha.jpg',
+    name: 'Ishaan Jha',
+    role: '',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/testimonials/ishaan_jha.jpg',
+    linkedin: 'https://www.linkedin.com/in/isabellathompson',
+    
+  },
+  {
+    
+    id: 2,
+    name: 'Sujal Goyal',
+    role: '',
+     image: 'https://ik.imagekit.io/mwwyrq9z8/sujal_goyal.jpg',
     linkedin: 'https://www.linkedin.com/in/kadirmiye',
   },
   {
-    id: 2,
-    name: 'Isabella Thompson',
-    role: 'Chief Technology Officer',
-    image: 'https://img.freepik.com/premium-photo/png-headset-headphones-portrait-cartoon_53876-762197.jpg',
-    linkedin: 'https://www.linkedin.com/in/isabellathompson',
-  },
-  {
     id: 3,
-    name: 'Zainab Rahman',
-    role: 'Chief Operations Officer',
-    image: 'https://img.freepik.com/premium-photo/png-cartoon-portrait-glasses-white-background_53876-905385.jpg',
+    name: 'Harshit Kumar',
+    role: '',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/testimonials/harshit_kumar.jpg',
     linkedin: 'https://www.linkedin.com/in/zainabrahman',
   },
 ];

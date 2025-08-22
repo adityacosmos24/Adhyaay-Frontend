@@ -19,44 +19,44 @@ export type TeamMember = {
 export const dami_data: TeamMember[] = [
   {
     id: 1,
-    name: 'Kadir Miye',
-    role: 'Chief Executive Officer',
-    image: 'https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833554.jpg',
-    socialMedia: { linkedin: 'https://linkedin.com/in/kadirmiye' }
+    name: 'Harsh Thakur',
+    role: 'Front End Developer',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/harsh1.jpg',
+    socialMedia: { linkedin: 'https://www.linkedin.com/in/harsh-thakur-dev/' }
   },
   {
     id: 2,
-    name: 'Isabella Thompson',
-    role: 'Chief Technology Officer',
-    image: 'https://img.freepik.com/premium-photo/png-headset-headphones-portrait-cartoon_53876-762197.jpg',
+    name: 'Somil Gupta',
+    role: 'Back End Developer',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/somil_gupta.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/isabellathompson' }
   },
   {
     id: 3,
-    name: 'Zainab Rahman',
+    name: 'Aditya Agrawal',
     role: 'Chief Operations Officer',
-    image: 'https://img.freepik.com/premium-photo/png-cartoon-portrait-glasses-white-background_53876-905385.jpg',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/aditya.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/zainabrahman' }
   },
   {
     id: 4,
-    name: 'Aiden Davis',
+    name: 'Shivam Rao',
     role: 'Chief Marketing Officer',
-    image: 'https://img.freepik.com/premium-psd/3d-avatar-character_975163-690.jpg',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/shivam_rao.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/aidendavis' }
   },
   {
     id: 5,
-    name: 'Zainab Rahman',
+    name: 'Abhijeet',
     role: 'Chief Operations Officer',
-    image: 'https://img.freepik.com/premium-photo/png-cartoon-portrait-glasses-white-background_53876-905385.jpg',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/abhijeet.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/zainabrahman' }
   },
   {
     id: 6,
-    name: 'Kadir Miye',
+    name: 'Dev Pratap',
     role: 'Chief Executive Officer',
-    image: 'https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833554.jpg',
+    image: 'https://ik.imagekit.io/mwwyrq9z8/tech/dev.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/kadirmiye' }
   },
 ];

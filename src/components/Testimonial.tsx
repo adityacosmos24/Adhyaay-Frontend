@@ -4,40 +4,33 @@ import { MorphingText } from "../components/magicui/morphing-text";
 export function Testimonial() {
   const testimonials = [
     {
+        quote:
+      "Having faced the challenges of transitioning into college life, I’ve experienced how valuable mentorship and emotional support can be. Adhyaay has not only helped me grow personally but also allowed me to be there for others on the same path.",
+    name: "Ishaan Jha",
+    designation: "Mechatronics and Automation 28",
+    src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/ishaan_jha.jpg", // ✅ now correctly linked
+  },
+    {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3",
+        "I am Harshit Kumar, a student of Mechatronics and Automation. Adhyaay gave me the opportunity to showcase my skills and creativity. As a member of the Content Team, I contribute to crafting engaging and impactful content that brings our ideas to life",
+      name: "Harshit Kumar",
+      designation: "Mechatronics and Automation 28",
+      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/harshit_kumar.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
+        "Adhyaay has been a wonderful experience for me. It gave me guidance when I felt lost and connected me with seniors who genuinely care. The mentorship, advice, and motivation I received here made my college journey easier and more meaningful..",
+      name: "Veer Somaiya",
+      designation: "28' CSE",
+      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/veer_somaya.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3",
-    },
+        "Adhyaay has been a transformative experience for me. It provided a supportive community where I found guidance and encouragement during my college journey. The mentorship and connections I made here have been invaluable, helping me grow both personally and academically.",
+      name: "Rudra N Chaturvedi",
+      designation: "CSE 28",
+      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/rudra.jpg",
+    }
   ];
 
   return (
