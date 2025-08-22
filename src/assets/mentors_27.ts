@@ -27,7 +27,7 @@ let mentors_27 = [
   { name: "Prakhar Prakash", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/prakhar_prakash.jpg" },
   { name: "Raj Kesharwani", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/raj_kesharwani.jpg" },
   { name: "Rishab Kumar", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/rishab_kumar.jpg" },
-  { name: "Samriddhi Tripathi", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/samriddhi_tripathi.jpg" },
+  { name: "Samriddhi Tripathi", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/samriddhi_tripathi1.jpg" },
   { name: "Sanyam Jain", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/sanyam_jain.jpg" },
   { name: "Shikhar Rai", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/shikhar_rai.jpg" },
   { name: "Shivanshu Pandey", role: "", image: "https://ik.imagekit.io/mwwyrq9z8/mentors/mentors_photo/shivanshu_pandey.jpeg" },
