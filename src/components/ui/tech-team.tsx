@@ -27,35 +27,35 @@ export const dami_data: TeamMember[] = [
   {
     id: 2,
     name: 'Somil Gupta',
-    role: 'Back End Developer',
+    role: 'Backend Lead Adhyaay',
     image: 'https://ik.imagekit.io/mwwyrq9z8/tech/somil_gupta.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/isabellathompson' }
   },
   {
     id: 3,
     name: 'Aditya Agrawal',
-    role: 'Chief Operations Officer',
+    role: 'Technical Lead Adhyaay',
     image: 'https://ik.imagekit.io/mwwyrq9z8/tech/aditya.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/zainabrahman' }
   },
   {
     id: 4,
     name: 'Shivam Rao',
-    role: 'Chief Marketing Officer',
+    role: 'Backend Developer',
     image: 'https://ik.imagekit.io/mwwyrq9z8/tech/shivam_rao.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/aidendavis' }
   },
   {
     id: 5,
     name: 'Abhijeet',
-    role: 'Chief Operations Officer',
+    role: 'Frontend Developer',
     image: 'https://ik.imagekit.io/mwwyrq9z8/tech/abhijeet.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/zainabrahman' }
   },
   {
     id: 6,
     name: 'Dev Pratap',
-    role: 'Chief Executive Officer',
+    role: 'Frontend Developer',
     image: 'https://ik.imagekit.io/mwwyrq9z8/tech/dev.jpg',
     socialMedia: { linkedin: 'https://linkedin.com/in/kadirmiye' }
   },
