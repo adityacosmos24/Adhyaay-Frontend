@@ -17,18 +17,18 @@ export default function Navbar({ isAuthenticated, setIsAuthenticated }: NavbarPr
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogout = async () => {
-    try {
-      await api.post("/auth/logout", {}, { withCredentials: true });
-      localStorage.removeItem("token");
-      toast.success("Logout successful!");
-    } catch {
-      console.error("Logout failed");
-      toast.error("Logout failed. Please try again.");
-    }
-    setIsAuthenticated(false);
-    navigate("/");
-  };
+const handleLogout = async () => {
+  try {
+    // optional call, only for UI consistency
+    localStorage.removeItem("token"); // actual logout happens here
+    toast.success("Logout successful!");
+  } catch {
+    toast.error("Logout failed. Please try again.");
+  }
+  setIsAuthenticated(false);
+  navigate("/");
+};
+
 
   // 🔑 Reusable scroll navigation handler
   const handleScrollNav = (targetId: string) => {
