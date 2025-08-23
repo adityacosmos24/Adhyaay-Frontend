@@ -27,12 +27,12 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 max-w-7xl pt-30 mx-auto px-6 md:px-10 
-     flex flex-col 
-     items-center text-center
-     md:flex-row md:items-start md:text-left
+      <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-10 
+     flex flex-col items-center text-center
+     md:flex-row md:items-center md:text-left
      justify-start md:justify-between gap-10 
-     min-h-[calc(100vh-64px)]">
+     min-h-fit md:min-h-[calc(100vh-64px)] 
+     pt-6 md:pt-0">
         
       {/* LEFT - Text */}
       <div className="flex-1 flex flex-col 
