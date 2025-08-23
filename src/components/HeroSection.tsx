@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full pt-10 md:pt-12 overflow-hidden min-h-screen">
+    <section className="relative w-full pt-[80px] md:pt-0 overflow-hidden min-h-screen">
       {/* Background */}
       <div className="absolute inset-0 z-0" />
 
