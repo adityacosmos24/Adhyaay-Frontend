@@ -40,8 +40,7 @@ export default function Councellingbenifits({ services }: ServicesProps) {
     <div className="w-full py-12">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-8">
-          <p className="text-sm uppercase tracking-wide font-semibold">Our Services</p>
+        <div className="text-center pt-30 mb-8">
           <h2
             className="text-4xl md:text-5xl font-extrabold text-black mb-2 
                        transition-transform duration-300 ease-out transform 
