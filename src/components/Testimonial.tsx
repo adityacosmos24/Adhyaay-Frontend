@@ -4,6 +4,13 @@ import { MorphingText } from "../components/magicui/morphing-text";
 export function Testimonial() {
   const testimonials = [
     {
+            quote:
+        "Adhyaay has been a team effort — a shared vision nurtured by the dedication of mentors, students, and an active core team. It fills me with joy to see this vision take shape. As I pass on this legacy, I hope it continues to ripple through time and gently touch every life it reaches. Best wishes to everyone on this journey.",
+      name: "Shraddha Sahu, Secretary (Founding Member)",
+      designation: "CSE 26",
+      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/rudra.jpg",
+    },
+    {
         quote:
       "Having faced the challenges of transitioning into college life, I’ve experienced how valuable mentorship and emotional support can be. Adhyaay has not only helped me grow personally but also allowed me to be there for others on the same path.",
     name: "Ishaan Jha",
@@ -29,13 +36,6 @@ export function Testimonial() {
       "Adhyaay has been a transformative experience for me. It provided a supportive community where I found guidance and encouragement during my college journey. The mentorship and connections I made here have been invaluable, helping me grow both personally and academically.",
       name: "Rudra N Chaturvedi",
       designation: "CSE 28",
-      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/rudra.jpg",
-    },
-    {
-            quote:
-        "Adhyaay has been a team effort — a shared vision nurtured by the dedication of mentors, students, and an active core team. It fills me with joy to see this vision take shape. As I pass on this legacy, I hope it continues to ripple through time and gently touch every life it reaches. Best wishes to everyone on this journey.",
-      name: "Shraddha Sahu, Secretary (Founding Member)",
-      designation: "CSE 26",
       src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/rudra.jpg",
     }
   ];
