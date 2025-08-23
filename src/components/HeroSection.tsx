@@ -28,8 +28,9 @@ const HeroSection: React.FC = () => {
 
       {/* Main content */}
       <div className="relative z-20 max-w-7xl pt-30 mx-auto px-6 md:px-10 
-     flex flex-col md:flex-row 
-     items-center md:items-start
+     flex flex-col 
+     items-center text-center
+     md:flex-row md:items-start md:text-left
      justify-start md:justify-between gap-10 
      min-h-[calc(100vh-64px)]">
         
@@ -59,7 +60,7 @@ const HeroSection: React.FC = () => {
           </p>
         </BoxReveal>
 
-        
+
         <BoxReveal boxColor="#f97316" duration={0.5}>
           <WrapButton
             href="/Councellors"
