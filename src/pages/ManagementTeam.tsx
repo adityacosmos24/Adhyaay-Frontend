@@ -20,14 +20,14 @@ export default function ManagementTeam() {
       name: "Prof. Madhusudan Singh",
       role: "Director IIIT Bhagalpur",
       quote: "Leadership is unlocking people's potential to become better.",
-      src: "../../src/assets/Director3.png",
+      src: "https://ik.imagekit.io/mwwyrq9z8/Director.jpg",
       linkedin: "https://linkedin.com/in/kadirmiye",
     },
     {
-      name: "Isabella Thompson",
+      name: "Dr. Dheeraj Kumar Sinha",
       role: "CTO",
       quote: "Innovation distinguishes between a leader and a follower.",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop",
+      src: "https://ik.imagekit.io/mwwyrq9z8/dheeraj.JPG",
       linkedin: "https://linkedin.com/in/isabellathompson",
     },
     {
@@ -41,7 +41,7 @@ export default function ManagementTeam() {
       name: "Shraddha Sahu",
       role: "SECRETARY",
       quote: "Operations is the backbone of any great organization.",
-      src: "../src/assets/Shradha.jpg",
+      src: "https://ik.imagekit.io/mwwyrq9z8/Shradha.jpg",
       linkedin: "https://linkedin.com/in/zainabrahman",
     },
   ];
