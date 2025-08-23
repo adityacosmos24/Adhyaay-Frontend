@@ -74,7 +74,7 @@ export default function Login({ setIsAuthenticated }: { setIsAuthenticated: (val
       </div>
 
       {/* Right side: login form */}
-      <div className="w-full md:w-2/5 z-10 flex items-center justify-center px-6 py-10">
+      <div className="w-full md:w-2/5 z-10 pt-20 flex items-center justify-center px-6 py-10">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="relative bg-white/95 p-10 rounded-2xl shadow-xl border-2 border-black backdrop-blur-sm w-full min-h-[500px] flex flex-col justify-center"

@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-64px)]">
+      <div className="relative z-20 max-w-7xl pt-30 mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-64px)]">
         
         {/* LEFT - Text */}
         <div className="flex-1 flex flex-col justify-center items-start md:items-start gap-4">
@@ -41,22 +41,21 @@ const HeroSection: React.FC = () => {
 
 
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
-            <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
               Welcome to 
             </h1>
           </BoxReveal>
 
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
-            <p className="text-8xl md:text-9xl font-bold py-3">
+            <p className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold py-3">
               <AuroraText>ADHYAAY</AuroraText>
             </p>
           </BoxReveal>
           
           <BoxReveal boxColor={"#f97316"} duration={0.5}>
             <p
-              className="text-xl md:text-2xl font-semibold tracking-wide text-center 
-                        bg-black 
-                        bg-clip-text text-transparent drop-shadow-sm"
+              className="text-base sm:text-lg md:text-2xl font-semibold tracking-wide text-center 
+                bg-black bg-clip-text text-transparent drop-shadow-sm"
             >
               Counselling & Mentorship Cell for IIIT Bhagalpur
             </p>

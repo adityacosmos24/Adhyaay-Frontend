@@ -16,7 +16,7 @@ export default function Councellors() {
     {/* <SmoothCursor /> */}
     <section className="flex flex-col md:flex-row items-center justify-between w-full h-screen px-6 md:px-16">
       {/* Left Side - Text */}
-      <div className="w-full md:w-2/5 space-y-4 md:space-y-6">
+      <div className="w-full md:w-2/5 pt-20 space-y-4 md:space-y-6">
         <Badge
           variant="outline"
           className="mb-6 rounded-[14px] border border-gray-300 bg-white text-lg text-gray-900"
