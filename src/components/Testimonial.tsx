@@ -8,7 +8,7 @@ export function Testimonial() {
         "Adhyaay has been a team effort — a shared vision nurtured by the dedication of mentors, students, and an active core team. It fills me with joy to see this vision take shape. As I pass on this legacy, I hope it continues to ripple through time and gently touch every life it reaches. Best wishes to everyone on this journey.",
       name: "Shraddha Sahu, Secretary (Founding Member)",
       designation: "CSE 26",
-      src: "https://ik.imagekit.io/mwwyrq9z8/testimonials/rudra.jpg",
+      src: "https://ik.imagekit.io/mwwyrq9z8/Shradha.jpg",
     },
     {
         quote:
